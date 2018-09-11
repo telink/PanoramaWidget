@@ -28,11 +28,12 @@ typedef enum ZLCPanoPerspectMode
 
 @interface PanoramaVC : GLKViewController <UIGestureRecognizerDelegate>
 
-@property (assign, nonatomic,  readonly) BOOL                 isUsingMotion;
-@property (assign, nonatomic, readwrite) ZLCPanoPerspectMode  perspectiveMode;
-@property (assign, nonatomic, readwrite) ZLCPanoSRCType       srcType;
-@property (assign, nonatomic, readwrite) BOOL                 isSupportAnimate;
-@property (strong, nonatomic,  readwrite)  UIImage *loadImage;
+@property (assign, nonatomic,  readonly)  BOOL                 isUsingMotion;
+
+@property (assign, nonatomic,  readwrite) ZLCPanoPerspectMode  perspectiveMode;
+@property (assign, nonatomic,  readwrite) ZLCPanoSRCType       srcType;
+@property (assign, nonatomic,  readwrite) BOOL                 isSupportAnimate;
+@property (strong, nonatomic,  readwrite) UIImage*             loadImage;
 
 
 - (instancetype)initWithSrcType:(ZLCPanoSRCType)srcType orientation:(UIDeviceOrientation)orientation;
@@ -47,3 +48,4 @@ typedef enum ZLCPanoPerspectMode
 
 
 @end
+
